@@ -7,7 +7,7 @@ session_start();
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="livre-or.css">
-<title>Document sans titre</title>
+<title>Connexion</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@ session_start();
 			</ul>
 		</nav>
 	</header>	
-	<form method="post" action="connexion.php">
+	<form class="form" method="post" action="connexion.php">
 		<h1 class="inscription">Connexion</h1>
 		<input type="text" name="login" class="largeur" id= "largeur1" placeholder="Login">
 		<input type="password" name="password" class="largeur" id= "largeur1" placeholder="Mot de passe"><br/><br/>

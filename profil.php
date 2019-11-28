@@ -5,15 +5,38 @@ $connexion = mysqli_connect("localhost","root", "","livreor");
 $requete= "SELECT * FROM utilisateurs WHERE login='".$_SESSION['login']."'";
 $query= mysqli_query($connexion, $requete);
 $data = mysqli_fetch_assoc($query);
+
+if (isset($_SESSION['login']))
+			{
+			
+			} else header('location: connexion.php');
 ?>
 
 <html>
     <head>
     <meta charset="utf-8">
         <title>Page de profil</title>
-        <link rel="stylesheet" href="livreorJulia.css">
+        <link rel="stylesheet" href="livre-or.css">
         <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
     </head>
+    <header>
+		<nav>
+			<ul>
+				<li ><a href="index.php">Accueil</a></li>
+         		<li ><a href="inscription.php">Inscription</a></li>
+				<?php
+				if(isset($_SESSION['login']))
+				{
+				echo "<li ><a href='deconnexion.php'>Déconnexion</a></li>";
+				
+				} else echo "<li ><a href='connexion.php'>Connexion</a></li>";
+				?>
+				<li ><a href="profil.php">Profil</a></li>
+         		<li ><a href="livre-or.php">Livre d'or</a></li>
+				<li ><a href="commentaire.php">Commentaires</a></li>
+			</ul>
+		</nav>
+    </header>
     <body class="bodyprofillivreor">
         <section>
                 <h1 class="h1profil ">Profil</h1>
@@ -41,10 +64,10 @@ $data = mysqli_fetch_assoc($query);
 
                     </div>
                         
-                        
+                      
                     </form>
                 </div>
-
+ 
                     <?php
                 
 
@@ -64,3 +87,8 @@ $data = mysqli_fetch_assoc($query);
         </section>
     </body>
 </html>
+     }
+
+
+
+   

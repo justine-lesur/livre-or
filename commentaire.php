@@ -11,7 +11,7 @@ session_start();
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="livre-or.css">
-<title>Document sans titre</title>
+<title>Ajouter un commentaire</title>
 </head>
 
 <body>

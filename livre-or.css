@@ -87,7 +87,7 @@ a:hover {
   }
 
 /*FORMULAIRE INSCRIPTION ET CONNEXION*/
-form {
+.form {
 	display: flex;
 	flex-direction: column;
 	margin-top: 50px;
@@ -243,6 +243,7 @@ input {
 	color: white;
 	font-size: 12px;
 	transition: all 0.2s ease;
+	margin-left:250px;
 }
 
 .validation2:hover {
@@ -266,6 +267,9 @@ input {
 	padding-bottom: 50px;
 	width: 700px;
 	box-shadow: 0px 1px 5px #799C7E;
+	margin-left: 600px;
+	margin-top: 300px;
+	 border-radius: 20px ;
 	
 	animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
@@ -311,6 +315,14 @@ input {
 .titrecommentaire {
 	color: #517a82;
 	font-family: "Montserrat-black";
+	text-align: center;
+	margin-top: 50px;
+}
+
+textarea
+{
+	margin-left:150px;
+	margin-top: 50px;
 }
 
 
@@ -327,3 +339,468 @@ input {
 	padding-top: 10px;
 	
 }
+
+/*Livre Or*/
+
+.bodylivreor
+{
+    background-image: url(images/fondmontagne.jpg);
+    background-attachment: fixed;
+    font-family: "MontserratMedium";
+}
+
+.h1livreor
+{
+    text-align: center;
+    font-size: 60px;
+	font-family: "MontserratMedium";
+	color: white;
+    
+}
+
+
+@keyframes tipsy {
+    0 {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+ 
+  
+  .livreor {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+	border-radius: 20px;
+	
+ }
+ .box {
+    margin: 0 auto;
+    position: relative;
+    color: white;
+    width: 570px;
+    height: 50px;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+.box-inner {
+    position: relative;
+}
+
+.box-next {
+    opacity: 0;
+    transition: all 1s ease;
+    font-size: inherit
+}
+
+.box > div > span, .box > span {
+    display: block;
+    transition: all 1s ease;
+    position: absolute;
+    top:0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box > div > span {
+    top:7px;
+}
+
+.box > div > span:not(:first-child) {
+    opacity: 0;
+}
+
+.box > div > span.hover-me {
+    transition-duration: .1s;
+}
+
+.box > span.l-top, .box > span.l-bottom {
+    border-top: 2px solid #b17b64;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition-duration: .2s
+}
+
+.box > span.l-left, .box > span.l-right {
+    border-left: 2px solid #b17b64;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition-duration: .3s
+}
+
+.box > span.l-bottom {
+    top: 48px;
+    transition-delay: .5s
+}
+
+.box > span.l-right {
+    left: 568px;
+    transition-delay: .5s
+}
+
+.box:hover > span.l-top, .box:hover > span.l-left, 
+.box:hover > span.l-bottom, .box:hover > span.l-right {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.box:hover > div > span.hover-me {
+    left: -150px;
+    opacity: 0;
+}
+
+.box:hover > div > span.hi {
+    opacity: 1;
+    left: 14px;
+}
+
+.box:hover > div > span.message {
+    opacity: 1;
+    left: 65px;
+    transition-delay: .25s;
+    transition-duration: .2s;
+}
+
+body > div.box:first-child:after {
+    content: '\25bc';
+    position:absolute;
+    left: 47%;
+    top: 50px;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+body > div.box:first-child:hover:after {
+    opacity: 1;
+}
+
+.box:hover + div.box-next {
+    opacity: 1;
+    margin-top: 32px
+}
+  
+ 
+
+
+
+
+@font-face
+{
+    font-family: "MontserratBlack";
+    src: url(font/Montserrat-Black.ttf) format("truetype");
+    font-family: "MontserratBold";
+    src: url(font/Montserrat-Bold.ttf) format("truetype");
+    font-family: "MontserratMedium";
+    src: url(font/Montserrat-Medium.ttf) format("truetype");
+
+}
+
+/*Profil*/
+
+.bodyprofillivreor
+{
+    background-image: url(images/fondmontagne.jpg);
+    background-attachment: fixed;
+    font-family: "MontserratMedium"
+    
+}
+
+.h1profil
+ {
+     text-align: center;
+     font-size: 50px;
+     -moz-animation-duration: 3s;
+     -webkit-animation-duration: 3s;
+     -moz-animation-name: slidein-left;
+     -webkit-animation-name: slidein-left;
+ }
+ @-moz-keyframes slidein-left {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  @-webkit-keyframes slidein-left {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+
+ .formprofil
+ {
+     margin: auto;
+     padding: auto;
+     padding-left: 770px;
+     padding-top: 250px;
+     border-radius: 20px;
+     
+ }
+
+
+ .inputprofil
+ {
+     font-size: 30px;
+     border-radius: 20px;
+ }
+
+.h2profil
+{
+    text-align: center;
+    padding-bottom: 15px;
+}
+ .wrapper {
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 2px 1px 0px #DDD;
+    box-sizing: border-box;
+    height: 300px;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    padding-top: 15px;
+  }
+
+ 
+  .input {
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    color: #555;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 18px;
+    height: 50px;
+    left: 50%;
+    margin: -25px 0 0 -100px;
+    padding: 10px 0px;
+    position: relative;
+    top: 50%;
+    width: 200px;
+  
+    &:focus {
+      outline: none;    
+    }
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #AAA;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: dodgerblue;
+  }
+  
+  .input:focus+.underline {
+    transform: scale(1);
+  }
+  
+  .underline {
+    background-color: dodgerblue;
+    display: inline-block;
+    height: 2px;
+    left: 50px;
+    margin-top: -4px;
+    position: absolute;
+    top: 185px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 202px;
+  }
+
+ 
+  
+
+  .stretch, .button:after, .button:before {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }    
+  .button {
+    background: #0962EA;
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #0962EA), color-stop(100%, #0AA0F6));
+    background-image: -moz-linear-gradient(left, #0962EA, #0AA0F6);
+    background-image: -webkit-linear-gradient(left, #0962EA, #0AA0F6);
+    background-image: linear-gradient(to right, #0962EA, #0AA0F6);
+    -moz-border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    border-radius: 1.5em;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+    border: none;
+    padding: 20px;
+    color: #FAF15D;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+    margin-left: 100px;
+  }
+  .button:after {
+    -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+    -webkit-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+    box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+    background: #FAF15D;
+    content: "";
+    height: 2px;
+    opacity: 0;
+  }
+  .button:before {
+    content: "";
+    opacity: 0;
+  }
+  .button:hover {
+    -webkit-animation: glitch 3s infinite;
+  }
+  .button:hover:before {
+    opacity: 1;
+  }
+  .button:hover:after {
+    -webkit-animation: scan 5s infinite;
+    opacity: 1;
+  }
+  
+  @-webkit-keyframes glitch {
+    0% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+    }
+    5% {
+      -moz-transform: skewX(2deg);
+      -ms-transform: skewX(2deg);
+      -webkit-transform: skewX(2deg);
+      transform: skewX(2deg);
+      opacity: 0.75;
+    }
+    10% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+      opacity: 1;
+    }
+    15% {
+      -moz-transform: skewX(-5deg);
+      -ms-transform: skewX(-5deg);
+      -webkit-transform: skewX(-5deg);
+      transform: skewX(-5deg);
+      opacity: 0.75;
+    }
+    20% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+      opacity: 1;
+    }
+    45% {
+      -moz-transform: skewX(3deg);
+      -ms-transform: skewX(3deg);
+      -webkit-transform: skewX(3deg);
+      transform: skewX(3deg);
+      opacity: 0.75;
+    }
+    50% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+      opacity: 1;
+    }
+    55% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+      opacity: 0.75;
+    }
+    60% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+      opacity: 1;
+    }
+    75% {
+      -moz-transform: skewX(2deg);
+      -ms-transform: skewX(2deg);
+      -webkit-transform: skewX(2deg);
+      transform: skewX(2deg);
+    }
+    80% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+    }
+    85% {
+      -moz-transform: skewX(-8deg);
+      -ms-transform: skewX(-8deg);
+      -webkit-transform: skewX(-8deg);
+      transform: skewX(-8deg);
+      opacity: 0.75;
+    }
+    90% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+      opacity: 1;
+    }
+    100% {
+      -moz-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg);
+    }
+  }
+  @-webkit-keyframes scan {
+    0% {
+      top: 0%;
+    }
+    50% {
+      top: 97%;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+  
+  a:link, a:visited
+  {
+      color: white;
+      text-decoration: none;
+  }
+
